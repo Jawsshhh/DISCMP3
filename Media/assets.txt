@@ -1,0 +1,16 @@
+Media/Textures/bg1.png
+Media/Textures/bg2.jpg
+Media/Textures/bg3.png
+Media/Loading/loading1.png
+Media/Loading/loading2.png
+Media/Loading/loading3.png
+Media/Loading/loading4.png
+Media/Loading/loading5.png
+Media/Loading/loading6.png
+Media/Character/tile000.png
+Media/Character/tile001.png
+Media/Character/tile002.png
+Media/Character/tile003.png
+Media/pokeball1.png
+Media/pokeball2.png
+Media/pokeball3.png
