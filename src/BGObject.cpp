@@ -7,6 +7,21 @@ BGObject::BGObject(string name) : AGameObject(name)
 {
 }
 
+BGObject::~BGObject()
+{
+    if (bg2Sprite != nullptr)
+    {
+        delete bg2Sprite;
+        bg2Sprite = nullptr;
+    }
+
+    if (whiteOverlay != nullptr)
+    {
+        delete whiteOverlay;
+        whiteOverlay = nullptr;
+    }
+}
+
 void BGObject::initialize()
 {
     std::cout << "Declared as " << this->getName() << "\n";
@@ -46,6 +61,11 @@ void BGObject::initialize()
     {
         std::cout << "Warning: Failed to load bg2!" << std::endl;
     }
+
+    // Create white overlay sprite for fade effect
+    whiteOverlay = new sf::RectangleShape(sf::Vector2f(BaseRunner::WINDOW_WIDTH, BaseRunner::WINDOW_HEIGHT));
+    whiteOverlay->setFillColor(sf::Color(255, 255, 255, 0)); // Start transparent
+    whiteOverlay->setPosition(0, 0);
 }
 
 void BGObject::processInput(sf::Event event)
@@ -68,10 +88,16 @@ void BGObject::draw(sf::RenderWindow* targetWindow)
         targetWindow->draw(*this->sprite);
     }
 
-    // Draw bg2 on top if fading
-    if (isFading && bg2Sprite != nullptr)
+    // Draw bg2 underneath white overlay during transition
+    if (isFading && bg2Sprite != nullptr && fadeProgress >= 0.5f)
     {
         targetWindow->draw(*bg2Sprite);
+    }
+
+    // Draw white overlay on top
+    if (isFading && whiteOverlay != nullptr)
+    {
+        targetWindow->draw(*whiteOverlay);
     }
 }
 
@@ -83,9 +109,14 @@ void BGObject::startTransitionToBg2()
         return;
     }
 
-    std::cout << "Starting fade transition to bg2..." << std::endl;
+    std::cout << "Starting white fade transition to bg2..." << std::endl;
     isFading = true;
     fadeProgress = 0.0f;
+
+    // Make bg2 fully visible (it will be revealed as white fades)
+    sf::Color color = bg2Sprite->getColor();
+    color.a = 255;
+    bg2Sprite->setColor(color);
 }
 
 void BGObject::updateFade(float deltaTime)
@@ -101,13 +132,25 @@ void BGObject::updateFade(float deltaTime)
         // Swap to bg2 as main background
         this->sprite->setTexture(*bg2Texture);
 
+        // Make white overlay invisible
+        whiteOverlay->setFillColor(sf::Color(255, 255, 255, 0));
+
         std::cout << "Fade to bg2 complete!" << std::endl;
     }
     else
     {
-        // Update alpha for smooth fade
-        sf::Color color = bg2Sprite->getColor();
-        color.a = static_cast<sf::Uint8>(fadeProgress * 255);
-        bg2Sprite->setColor(color);
+        // White fade effect: fade to white in first half, fade from white in second half
+        if (fadeProgress <= 0.5f)
+        {
+            // First half: fade TO white (alpha increases)
+            float alpha = (fadeProgress / 0.5f) * 255.0f;
+            whiteOverlay->setFillColor(sf::Color(255, 255, 255, static_cast<sf::Uint8>(alpha)));
+        }
+        else
+        {
+            // Second half: fade FROM white (alpha decreases)
+            float alpha = ((1.0f - fadeProgress) / 0.5f) * 255.0f;
+            whiteOverlay->setFillColor(sf::Color(255, 255, 255, static_cast<sf::Uint8>(alpha)));
+        }
     }
 }

@@ -100,17 +100,29 @@ void PokeballAnimation::updateAnimation(sf::Time deltaTime)
 
         if (currentFrame >= animationFrames.size())
         {
-            // Animation finished - stay on last frame for a bit longer
-            currentFrame = animationFrames.size() - 1;
             animationComplete = true;
+            currentFrame = animationFrames.size() - 1; // optional: keep last frame visible
             std::cout << "=== POKEBALL ANIMATION COMPLETE ===" << std::endl;
+            return; // stop further animation work
         }
 
-        if (this->sprite != nullptr)
+
+        if (this->sprite != nullptr && currentFrame < animationFrames.size())
         {
             this->sprite->setTexture(*animationFrames[currentFrame]);
         }
 
         timeSinceLastFrame = 0.0f;
+    }
+    else if (currentFrame >= animationFrames.size())
+    {
+        // Continue counting completion timer even when not changing frames
+        completionTimer += deltaTime.asSeconds();
+
+        if (completionTimer >= HOLD_LAST_FRAME_DURATION)
+        {
+            animationComplete = true;
+            std::cout << "=== POKEBALL ANIMATION COMPLETE ===" << std::endl;
+        }
     }
 }

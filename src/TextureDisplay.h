@@ -23,7 +23,7 @@ public:
 
 private:
 	typedef std::vector<IconObject*> IconList;
-	IconList iconList; // Restore the icon list
+	IconList iconList;
 
 	ThreadPool threadPool = ThreadPool(30);
 	AnimatedCharacter* loadingCharacter = nullptr;
@@ -39,27 +39,29 @@ private:
 	const int MAX_COLUMN = 28;
 	const int MAX_ROW = 22;
 
-
-
 	std::mutex guard;
-	bool allIconsVisible = false;  
-	bool loadingComplete = false;  
-	bool bgTransitionStarted = false;  
-	float delayTimer = 0.0f;  
-	const float ICON_FADE_DELAY = 0.5f;  
-	const float ICON_FADE_DURATION = 1.5f;  // how long icons take to fade in
-	float iconFadeProgress = 0.0f;  
+
+	// NEW SEQUENCE FLAGS
+	bool loadingComplete = false;           // Set when all textures loaded
+	bool pokeballAnimStarted = false;       // Pokeball animation begins
+	bool pokeballAnimComplete = false;      // Pokeball animation finishes
+	bool bgTransitionStarted = false;       // Background fade begins
+	bool bgTransitionComplete = false;      // Background fade finishes
+	bool allIconsVisible = false;           // Icon fade-in complete
 
 	PokeballAnimation* pokeballAnim = nullptr;
-	bool pokeballAnimComplete = false;
 
-	bool bgTransitionComplete = false;  
-	float bgTransitionTimer = 0.0f;     
-	const float BG_TRANSITION_DURATION = 2.0f;  //  match BGObject fade duration
+	float bgTransitionTimer = 0.0f;
+	const float BG_TRANSITION_DURATION = 2.0f;  // Match BGObject fade duration
 
+	float delayTimer = 0.0f;
+	const float ICON_FADE_DELAY = 0.5f;
+	const float ICON_FADE_DURATION = 1.5f;
+	float iconFadeProgress = 0.0f;
 
-	void spawnObject(); 
+	void spawnObject();
 	void updateLoadingProgress();
-	void updateIconFadeIn(sf::Time deltaTime);  
-
+	void startPokeballAnimation();          // NEW
+	void startBackgroundTransition();        // NEW
+	void updateIconFadeIn(sf::Time deltaTime);
 };

@@ -15,12 +15,15 @@ public:
 private:
     std::vector<sf::Texture*> animationFrames;
     int currentFrame = 0;
-    float animationSpeed = 0.095f; 
+    float animationSpeed = 0.095f;
     float timeSinceLastFrame = 0.0f;
     bool animationComplete = false;
 
-    float xPosition = 960.0f;  
-    float yPosition = 540.0f;  
+    float completionTimer = 0.0f;
+    const float HOLD_LAST_FRAME_DURATION = 0.5f;  // Hold last frame for 0.5 seconds
+
+    float xPosition = 960.0f;
+    float yPosition = 540.0f;
 
     void loadAnimationFrames();
     void updateAnimation(sf::Time deltaTime);

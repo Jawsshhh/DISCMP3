@@ -5,11 +5,12 @@ class BGObject : public AGameObject
 {
 public:
     BGObject(String name);
+    ~BGObject();
     void initialize();
     void processInput(sf::Event event);
     void update(sf::Time deltaTime);
     void draw(sf::RenderWindow* targetWindow) override;
-    void startTransitionToBg2();  // ADD THIS - call when loading completes
+    void startTransitionToBg2();
 
 private:
     const float SPEED_MULTIPLIER = 500.0f;
@@ -18,6 +19,7 @@ private:
     sf::Texture* bg1Texture = nullptr;
     sf::Texture* bg2Texture = nullptr;
     sf::Sprite* bg2Sprite = nullptr;
+    sf::RectangleShape* whiteOverlay = nullptr; // NEW: White fade overlay
 
     bool isFading = false;
     float fadeProgress = 0.0f;

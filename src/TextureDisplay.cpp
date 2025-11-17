@@ -6,6 +6,9 @@
 #include "IconObject.h"
 #include "BGObject.h"
 
+// Reduce this value to make the white fade start sooner after pokeball
+constexpr float BG_TRANSITION_DURATION_OVERRIDE = 1.0f; // seconds (was longer)
+
 TextureDisplay::TextureDisplay() : AGameObject("TextureDisplay")
 {
 }
@@ -64,9 +67,9 @@ void TextureDisplay::update(sf::Time deltaTime)
 		int loadedTextureCount = TextureManager::getInstance()->getNumLoadedStreamTextures();
 		int numReadyToSpawn = loadedTextureCount - spawnedIconCount;
 
-		// Only spawn if we have LOADED textures ready
-		if (numReadyToSpawn > 0) {
-			const int SPAWN_BATCH_SIZE = 20;
+		// Only spawn if we have LOADED textures ready AND fade hasn't started
+		if (numReadyToSpawn > 0 && !bgTransitionStarted) {
+			const int SPAWN_BATCH_SIZE = 40;
 			int numToSpawnThisBatch = std::min(numReadyToSpawn, SPAWN_BATCH_SIZE);
 
 			std::cout << "[MainThread] === Spawning BATCH of " << numToSpawnThisBatch
@@ -84,11 +87,11 @@ void TextureDisplay::update(sf::Time deltaTime)
 
 		updateLoadingProgress();
 
-		// Load textures in batches
+		// Load textures in batches ONLY before background transition starts
 		const int LOAD_BATCH_SIZE = 40;
 		int totalTextures = TOTAL_TEXTURES;
 
-		if (loadedTextureCount < totalTextures)
+		if (loadedTextureCount < totalTextures && !bgTransitionStarted)
 		{
 			int texturesToLoad = std::min(LOAD_BATCH_SIZE, totalTextures - loadedTextureCount);
 
@@ -104,17 +107,50 @@ void TextureDisplay::update(sf::Time deltaTime)
 		}
 	}
 
-	// Track background transition timer
-	if (loadingComplete && !bgTransitionComplete)
+	// NEW SEQUENCE: pokeball -> bg transition -> icon fade
+
+	// Step 1: Show pokeball after loading completes
+	if (loadingComplete && !pokeballAnimStarted)
 	{
-		bgTransitionTimer += deltaTime.asSeconds();
-		if (bgTransitionTimer >= BG_TRANSITION_DURATION)
+		startPokeballAnimation();
+	}
+
+	// Step 1b: Poll pokeball completion every frame
+	if (pokeballAnimStarted && !pokeballAnimComplete && pokeballAnim != nullptr)
+	{
+		if (pokeballAnim->isComplete())
 		{
-			bgTransitionComplete = true;
-			std::cout << "Background transition complete! Ready for Pokeball..." << std::endl;
+			pokeballAnimComplete = true;
+			std::cout << "[TextureDisplay] Pokeball animation complete!" << std::endl;
+			GameObjectManager::getInstance()->deleteObjectByName("PokeballAnim");
+			pokeballAnim = nullptr;
+
+			// Start background transition immediately (no extra-frame delay)
+			if (!bgTransitionStarted) {
+				startBackgroundTransition();
+			}
 		}
 	}
 
+	// Step 2: After pokeball completes, start background transition (fallback)
+	if (pokeballAnimComplete && !bgTransitionStarted)
+	{
+		startBackgroundTransition();
+	}
+
+	// Step 3: Track background transition completion
+	if (bgTransitionStarted && !bgTransitionComplete)
+	{
+		bgTransitionTimer += deltaTime.asSeconds();
+		// use the override so this happens faster when you lower BG_TRANSITION_DURATION_OVERRIDE
+		if (bgTransitionTimer >= BG_TRANSITION_DURATION_OVERRIDE)
+		{
+			bgTransitionComplete = true;
+			std::cout << "Background transition complete! Starting icon fade..." << std::endl;
+		}
+	}
+
+	// Step 4: Fade in icons after background transition
 	if (bgTransitionComplete && !allIconsVisible)
 	{
 		updateIconFadeIn(deltaTime);
@@ -138,8 +174,8 @@ void TextureDisplay::spawnObject()
 	// Set position in grid with offset
 	int IMG_WIDTH = 68;
 	int IMG_HEIGHT = 68;
-	int OFFSET_X = -65;    
-	int OFFSET_Y = -100;   
+	int OFFSET_X = -65;
+	int OFFSET_Y = -100;
 
 	float x = OFFSET_X + (this->columnGrid * IMG_WIDTH);
 	float y = OFFSET_Y + (this->rowGrid * IMG_HEIGHT);
@@ -155,7 +191,7 @@ void TextureDisplay::spawnObject()
 
 	GameObjectManager::getInstance()->addObject(iconObj);
 	iconObj->setPosition(x, y);
-	iconObj->setTransparency(0);  
+	iconObj->setTransparency(0);
 
 	guard.unlock();
 }
@@ -168,22 +204,19 @@ void TextureDisplay::updateLoadingProgress()
 	float progress = static_cast<float>(loadedCount) / static_cast<float>(TOTAL_TEXTURES);
 	loadingCharacter->updateProgress(progress);
 
-	// Start background transition when loading is complete
-	if (loadedCount >= TOTAL_TEXTURES && !loadingComplete)
-	{
-		std::cout << "Loading complete! Starting background transition..." << std::endl;
+	// Previously we marked loadingComplete as soon as all textures were loaded.
+	// Ensure all icons have actually been spawned/added before proceeding to pokeball/bg/fade.
+	int spawnedCount = static_cast<int>(iconList.size());
 
+	// Only mark loading as complete when:
+	//  - all textures are loaded, AND
+	//  - all icon objects have been spawned into iconList.
+	if (loadedCount >= TOTAL_TEXTURES && spawnedCount >= TOTAL_TEXTURES && !loadingComplete)
+	{
+		std::cout << "Loading complete! All textures loaded and all icons spawned. Ready for pokeball animation..." << std::endl;
 		loadingComplete = true;
 
-		// Start background transition
-		BGObject* bgObject = dynamic_cast<BGObject*>(
-			GameObjectManager::getInstance()->findObjectByName("BGObject")
-			);
-		if (bgObject != nullptr)
-		{
-			bgObject->startTransitionToBg2();
-		}
-
+		// Remove loading character and text immediately
 		if (loadingCharacter != nullptr)
 		{
 			GameObjectManager::getInstance()->deleteObjectByName("LoadingCharacter");
@@ -198,30 +231,44 @@ void TextureDisplay::updateLoadingProgress()
 			std::cout << "Removed loading text" << std::endl;
 		}
 	}
+	else if (loadedCount >= TOTAL_TEXTURES && spawnedCount < TOTAL_TEXTURES)
+	{
+		// Helpful debug/logging if textures are ready but icons still being spawned.
+		std::cout << "All textures are loaded (" << loadedCount << "), waiting for spawned icons (" << spawnedCount << "/" << TOTAL_TEXTURES << ") before proceeding." << std::endl;
+	}
+}
+
+void TextureDisplay::startPokeballAnimation()
+{
+	if (pokeballAnim == nullptr)
+	{
+		pokeballAnim = new PokeballAnimation("PokeballAnim");
+		GameObjectManager::getInstance()->addObject(pokeballAnim);
+		pokeballAnimStarted = true;
+		std::cout << "Pokeball animation started!" << std::endl;
+	}
+	// Do not attempt to check completion here; completion is polled in update()
+}
+
+void TextureDisplay::startBackgroundTransition()
+{
+	std::cout << "Starting background transition..." << std::endl;
+
+	BGObject* bgObject = dynamic_cast<BGObject*>(
+		GameObjectManager::getInstance()->findObjectByName("BGObject")
+		);
+
+	if (bgObject != nullptr)
+	{
+		bgObject->startTransitionToBg2();
+		bgTransitionStarted = true;
+		bgTransitionTimer = 0.0f;
+	}
 }
 
 void TextureDisplay::updateIconFadeIn(sf::Time deltaTime)
 {
-	if (pokeballAnim == nullptr && !pokeballAnimComplete)
-	{
-		pokeballAnim = new PokeballAnimation("PokeballAnim");
-		GameObjectManager::getInstance()->addObject(pokeballAnim);
-		std::cout << "Pokeball animation started!" << std::endl;
-		return;
-	}
-
-	if (pokeballAnim != nullptr && !pokeballAnimComplete)
-	{
-		if (pokeballAnim->isComplete())
-		{
-			pokeballAnimComplete = true;
-			GameObjectManager::getInstance()->deleteObjectByName("PokeballAnim");
-			pokeballAnim = nullptr;
-			std::cout << "Pokeball animation removed, starting icon fade" << std::endl;
-		}
-		return;
-	}
-
+	// Small delay before starting icon fade
 	if (delayTimer < ICON_FADE_DELAY)
 	{
 		delayTimer += deltaTime.asSeconds();
