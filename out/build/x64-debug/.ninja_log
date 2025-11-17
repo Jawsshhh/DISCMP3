@@ -1,0 +1,183 @@
+# ninja log v6
+159	2088	7822978000723833	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Mouse.cpp.obj	a72ef69e8d66944f
+67	255	7822977999802562	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Lock.cpp.obj	f3315c486e547e8b
+2802	3363	7822978027155884	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Vertex.cpp.obj	8bd45265cde688dc
+2589	2802	7822978025021725	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/TextureSaver.cpp.obj	3dbb3d4eb68341ac
+1725	6529	7850651580337159	bin/STDISCM-SFML-CMAKE.exe	d4fc4230b8fd4440
+56	86	7850663014803608	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/out/build/x64-debug/CMakeFiles/cmake.verify_globs	395c08ef45ae0e4e
+60	265	7822977999730620	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Clock.cpp.obj	f36f6f239624102e
+141	287	7822978000536612	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/GlResource.cpp.obj	874323be679c129c
+451	2996	7822978003646669	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Win32/CursorImpl.cpp.obj	7021c8881d3600ae
+90	280	7822978000038528	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Time.cpp.obj	966166e91e8861bb
+75	273	7822977999887291	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Sleep.cpp.obj	bf2e36e8fb79f8a1
+86	1000	7822977999989549	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/ThreadLocal.cpp.obj	665a31ae6f938d74
+127	295	7822978000398861	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Context.cpp.obj	85fd262a08d0800c
+118	301	7822978000312994	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/sfml-system.rc.res	76e50b1337e4609f
+461	3792	7822978003743727	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Win32/ClipboardImpl.cpp.obj	9257b94f52afd50a
+113	890	7849993075875426	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/AGameObject.cpp.obj	d9ece6ca95ab72c6
+96	307	7822978000092975	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/MemoryInputStream.cpp.obj	e67f3319be6f0ed7
+1032	2069	7822978009451351	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/sfml-window.rc.res	de527b2e680cd664
+256	450	7822978001704159	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Touch.cpp.obj	1010a1be13b00a7d
+266	461	7822978001789840	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Sensor.cpp.obj	d2c64cf0b7a0ff65
+108	948	7822978000213422	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/SleepImpl.cpp.obj	ae5027d58fb9b643
+988	2632	7822978009009758	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Win32/VideoModeImpl.cpp.obj	adacd90601411965
+2056	3005	7822978019701164	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderStates.cpp.obj	e3fc1d0d81a7f3d3
+115	964	7822978000277877	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/ThreadLocalImpl.cpp.obj	42e55fb24a65e155
+1317	3518	7822978012305597	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/GLCheck.cpp.obj	855dccc69d26f140
+287	975	7822978002001639	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Vulkan.cpp.obj	2958cf475168ed84
+295	3404	7822978002083895	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Window.cpp.obj	b907819b1e86c493
+104	987	7822978000182536	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/MutexImpl.cpp.obj	b9a1bedc2afd3d5f
+131	1010	7822978000447309	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Cursor.cpp.obj	57fdd671f1e92df8
+83	1020	7822977999964736	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Thread.cpp.obj	1715d0bab0538ec0
+71	1031	7822977999843462	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Mutex.cpp.obj	fa4add6dd9fcbda4
+1944	3981	7822978018566903	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/ImageLoader.cpp.obj	9a8b3b6f6ebec5eb
+101	1040	7822978000138255	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/ClockImpl.cpp.obj	553630d72813397e
+93	1048	7822978000068619	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/FileInputStream.cpp.obj	e7b961a2482deb2a
+1041	1307	7822978009542693	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/BlendMode.cpp.obj	2620d700f419e15d
+111	2603	7822978000243883	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/ThreadImpl.cpp.obj	1b828d8a2ce0334b
+2070	4127	7822978019826561	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTexture.cpp.obj	a4342ec916223cc6
+975	1236	7822978008882138	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Win32/SensorImpl.cpp.obj	1693bb64d65adf76
+1759	3723	7822978016725414	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Image.cpp.obj	69ed4222d2806a7
+281	1317	7822978001937735	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/VideoMode.cpp.obj	5276b8a850b896f5
+1010	3809	7822978009239759	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Win32/WindowImplWin32.cpp.obj	5399f9388ff86e31
+63	1639	7822977999771342	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Err.cpp.obj	594e4a42eb30f3e0
+79	2273	7822977999923098	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/String.cpp.obj	897127f02da78278
+123	1758	7822978000364362	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Clipboard.cpp.obj	ec5bc26f1061f6df
+274	1943	7822978001872045	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/SensorManager.cpp.obj	d81869b65959347b
+2997	4501	7822978029101390	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Shape.cpp.obj	3dc82d2dba71852a
+145	2619	7822978000580991	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Joystick.cpp.obj	58f0644b2a1552d9
+307	3356	7822978002209712	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/WindowImpl.cpp.obj	34ffc06c6e9a5038
+155	2056	7822978000668402	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Keyboard.cpp.obj	7f7205a60ea59a53
+1048	2077	7822978009608720	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Color.cpp.obj	b3f5c8f3d92f784a
+1236	3506	7822978011500074	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Font.cpp.obj	80c33c58d338689f
+3848	5234	7822978037617829	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/StringUtils.cpp.obj	3ef438283ca131d0
+2632	3673	7822978025458691	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Transformable.cpp.obj	b086eacb1c7cbd71
+1308	2283	7822978012217175	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Glsl.cpp.obj	fc06f63c874e8c04
+69	3627	7850663080308286	build.ninja	e025e7099dea41f9
+1000	2588	7822978009132583	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Win32/VulkanImplWin32.cpp.obj	3829df2f76e4e799
+150	2796	7822978000626414	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/JoystickManager.cpp.obj	d6c66e9402cf1b2c
+172	1170	7849951795074976	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileReaderOgg.cpp.obj	e7524f3a561c07e4
+141	985	7849951794772676	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundBufferRecorder.cpp.obj	c3d4b9b9c28e343c
+136	3271	7822978000492934	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/GlContext.cpp.obj	635d27221901ea42
+301	3378	7822978002139222	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/WindowBase.cpp.obj	f8efe1a395d0075
+3688	3988	7822978036016470	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/sfml-graphics.rc.res	cbefc49ab15b2098
+1639	3388	7822978015528127	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/GLExtensions.cpp.obj	969351f427b9cdf9
+1020	3713	7822978009334704	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Win32/WglContext.cpp.obj	f1e92b0915b159e4
+948	3687	7822978008619089	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Win32/InputImpl.cpp.obj	a6d51afde10b605e
+123	1174	7849951794589876	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/AudioDevice.cpp.obj	19f260e3035323b5
+2797	3698	7822978027098750	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/View.cpp.obj	de9f054d8ef79832
+3841	4134	7822978037547592	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/MathUtils.cpp.obj	a936380abf2ac0d6
+964	3825	7822978008768284	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Win32/JoystickImpl.cpp.obj	5e43eeee8393f1f6
+3507	3831	7822978034208264	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImpl.cpp.obj	4aef3d2c4c676d19
+3673	3848	7822978035864043	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImplDefault.cpp.obj	f0edd1af0640814b
+2620	3841	7822978025336056	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Transform.cpp.obj	41260e4e4d849068
+2603	4135	7822978037527591	bin/sfml-system-d-2.dll	859048678352666a
+2603	4135	7822978037527591	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/lib/sfml-system-d.lib	859048678352666a
+2078	4240	7822978019917539	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTarget.cpp.obj	9b7c91c93870c8f1
+3272	4244	7822978031858252	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RectangleShape.cpp.obj	388eca63d7e19951
+3006	4248	7822978029191657	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/CircleShape.cpp.obj	5bbc298b69c41dc9
+2273	4254	7822978021867910	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Shader.cpp.obj	e0b89a82bc32d77
+3388	4325	7822978033014920	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/VertexArray.cpp.obj	1969141656bec468
+3356	4329	7822978032691328	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/ConvexShape.cpp.obj	c9554d22465f78d2
+2088	4357	7822978020010658	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderWindow.cpp.obj	9d0b20787ef9f8e0
+2284	4488	7822978021969763	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Texture.cpp.obj	8cfced762963c33c
+3363	4492	7822978032766456	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Sprite.cpp.obj	76e6c306c70345b
+4135	4677	7822978045620994	bin/sfml-window-d-2.dll	3d032ac17d4b2252
+4135	4677	7822978045620994	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/lib/sfml-window-d.lib	3d032ac17d4b2252
+3404	4963	7822978033180261	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/VertexBuffer.cpp.obj	8bee7279fcde20ad
+3379	5199	7822978032916943	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Text.cpp.obj	7709bf0c764c5d1f
+99	803	7838623628893502	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/IETThread.cpp.obj	4337f8f8248177a4
+3518	5329	7822978034318602	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImplFBO.cpp.obj	75b27bc5ce4a11b4
+187	372	7849951795228024	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/sfml-audio.rc.res	1c7d9ceed5f4ba24
+142	1082	7850633366751691	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/FPSCounter.cpp.obj	999946ae214b4ab5
+105	1043	7850651564138497	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/BGObject.cpp.obj	1a37573766474ebb
+108	1166	7850651564163732	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/BaseRunner.cpp.obj	b59423fa706de4e
+111	1053	7850651564194376	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/IconObject.cpp.obj	5580e7a095f98774
+133	996	7849993076067325	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/GameObjectManager.cpp.obj	63653f66bf213ca4
+109	874	7850069842632836	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/main.cpp.obj	202081b5304292d0
+5330	5648	7822978055398605	bin/sfml-graphics-d-2.dll	1921fbc4eb8409ee
+5330	5648	7822978055398605	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/lib/sfml-graphics-d.lib	1921fbc4eb8409ee
+119	1151	7850651564285994	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/TextureDisplay.cpp.obj	bb8ecbc7b04c40a4
+123	1725	7850651564315862	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/TextureManager.cpp.obj	771cb7eded9474df
+102	135	7838636547387440	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/IExecutionEvent.cpp.obj	f0fdf5c4d60f1b5a
+113	1064	7850651564219756	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/LoadAssetThread.cpp.obj	c2eb333c44829f33
+80	500	7839525048374372	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/WorkerThread.cpp.obj	49f896d6c85ceec7
+109	610	7839523380192609	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/ThreadPool.cpp.obj	2d1df24876b1ab4a
+101	712	7849950231726449	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/MusicManager.cpp.obj	be2ab5db0db4cfb1
+155	265	7849951794908167	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundSource.cpp.obj	a1a1bc1229581e81
+119	797	7849951794548181	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/AlResource.cpp.obj	ae9b5df8083b5db9
+127	838	7849951794620087	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/Listener.cpp.obj	3d3e24f37ed1005f
+148	851	7849951794840416	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/OutputSoundFile.cpp.obj	6b07610c88540dc7
+134	853	7849951794695747	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/Sound.cpp.obj	737833367d99c232
+166	1162	7849951795009927	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileReaderFlac.cpp.obj	cf9b9db9572ba494
+159	1165	7849951794944852	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundStream.cpp.obj	3b33ff9532987c31
+116	1167	7849951794517811	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/ALCheck.cpp.obj	30873d45460a8134
+152	1189	7849951794875167	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundRecorder.cpp.obj	8bd6bbe445629210
+176	1207	7849951795117540	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileReaderWav.cpp.obj	30db14c93e52db2e
+162	1210	7849951794976476	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileFactory.cpp.obj	1c09d3795782db47
+184	1235	7849951795195053	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileWriterWav.cpp.obj	61a22435a7699dc1
+179	1237	7849951795151236	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileWriterFlac.cpp.obj	5ea0d2a7f1721aa6
+182	1240	7849951795172367	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileWriterOgg.cpp.obj	c8901152c126f54a
+138	1249	7849951794728967	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundBuffer.cpp.obj	266e8d9b55c9589a
+169	1251	7849951795040101	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/SoundFileReaderMp3.cpp.obj	5151f29ed39b3a89
+131	1261	7849951794660664	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/Music.cpp.obj	7c40e7c799d84a3e
+145	1278	7849951794805345	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/InputSoundFile.cpp.obj	65dcfb4be384339
+1278	1502	7849951808204452	bin/sfml-audio-d-2.dll	729c95f4e8902f80
+1278	1502	7849951808204452	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/lib/sfml-audio-d.lib	729c95f4e8902f80
+94	863	7849992069313953	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/BackgroundManager.cpp.obj	961ac418ce02a47d
+101	1060	7850651564102800	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/AnimatedCharacter.cpp.obj	2de7cdb657201adf
+116	1071	7850651564250178	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/LoadingText.cpp.obj	404abab1d866bf5e
+87	7104	7850663080308286	build.ninja	e025e7099dea41f9
+44	77	7850663085457713	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/out/build/x64-debug/CMakeFiles/cmake.verify_globs	395c08ef45ae0e4e
+102	871	7850663086047519	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/PokeballAnimation.cpp.obj	3303902fb5fe676
+105	964	7850663086072139	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/TextureDisplay.cpp.obj	bb8ecbc7b04c40a4
+99	971	7850663086016595	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/BaseRunner.cpp.obj	b59423fa706de4e
+971	5624	7850663094740399	bin/STDISCM-SFML-CMAKE.exe	252b1a372cd83a22
+61	85	7850664035760863	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/out/build/x64-debug/CMakeFiles/cmake.verify_globs	395c08ef45ae0e4e
+48	84	7850664619962823	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/out/build/x64-debug/CMakeFiles/cmake.verify_globs	395c08ef45ae0e4e
+42	62	7850665217500020	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/out/build/x64-debug/CMakeFiles/cmake.verify_globs	395c08ef45ae0e4e
+82	992	7850665217909723	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/BaseRunner.cpp.obj	b59423fa706de4e
+85	999	7850665217937766	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/TextureDisplay.cpp.obj	bb8ecbc7b04c40a4
+999	5169	7850665227081307	bin/STDISCM-SFML-CMAKE.exe	252b1a372cd83a22
+52	72	7850665946167831	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/out/build/x64-debug/CMakeFiles/cmake.verify_globs	395c08ef45ae0e4e
+36	55	7850667397384889	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/out/build/x64-debug/CMakeFiles/cmake.verify_globs	395c08ef45ae0e4e
+79	957	7850667397808844	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/TextureDisplay.cpp.obj	bb8ecbc7b04c40a4
+76	974	7850667397775668	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/BaseRunner.cpp.obj	b59423fa706de4e
+975	5382	7850667406765384	bin/STDISCM-SFML-CMAKE.exe	252b1a372cd83a22
+55	74	7850667968620907	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/out/build/x64-debug/CMakeFiles/cmake.verify_globs	395c08ef45ae0e4e
+99	910	7850667969052172	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/PokeballAnimation.cpp.obj	3303902fb5fe676
+95	1012	7850667969020280	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/BaseRunner.cpp.obj	b59423fa706de4e
+101	1023	7850667969078727	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/TextureDisplay.cpp.obj	bb8ecbc7b04c40a4
+1023	5262	7850667978308899	bin/STDISCM-SFML-CMAKE.exe	252b1a372cd83a22
+63	89	7850668787810725	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/out/build/x64-debug/CMakeFiles/cmake.verify_globs	395c08ef45ae0e4e
+114	905	7850668788310313	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/PokeballAnimation.cpp.obj	3303902fb5fe676
+116	997	7850668788341436	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/TextureDisplay.cpp.obj	bb8ecbc7b04c40a4
+111	1003	7850668788280009	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/BaseRunner.cpp.obj	b59423fa706de4e
+1003	6407	7850668797207137	bin/STDISCM-SFML-CMAKE.exe	252b1a372cd83a22
+77	132	7850669050337506	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/out/build/x64-debug/CMakeFiles/cmake.verify_globs	395c08ef45ae0e4e
+38	59	7850671659321965	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/out/build/x64-debug/CMakeFiles/cmake.verify_globs	395c08ef45ae0e4e
+44	75	7850676274909617	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/out/build/x64-debug/CMakeFiles/cmake.verify_globs	395c08ef45ae0e4e
+37	55	7850676541824490	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/out/build/x64-debug/CMakeFiles/cmake.verify_globs	395c08ef45ae0e4e
+79	898	7850676542244682	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/PokeballAnimation.cpp.obj	3303902fb5fe676
+82	1000	7850676542282617	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/TextureDisplay.cpp.obj	bb8ecbc7b04c40a4
+76	1010	7850676542209500	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/BaseRunner.cpp.obj	b59423fa706de4e
+1010	5993	7850676551548942	bin/STDISCM-SFML-CMAKE.exe	252b1a372cd83a22
+55	99	7850676774204131	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/out/build/x64-debug/CMakeFiles/cmake.verify_globs	395c08ef45ae0e4e
+124	1109	7850676774893096	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/PokeballAnimation.cpp.obj	3303902fb5fe676
+120	1263	7850676774861914	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/BaseRunner.cpp.obj	b59423fa706de4e
+126	1281	7850676774924154	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/TextureDisplay.cpp.obj	bb8ecbc7b04c40a4
+1281	5805	7850676786469003	bin/STDISCM-SFML-CMAKE.exe	252b1a372cd83a22
+53	76	7850677377886585	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/out/build/x64-debug/CMakeFiles/cmake.verify_globs	395c08ef45ae0e4e
+97	1016	7850677378338664	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/TextureDisplay.cpp.obj	bb8ecbc7b04c40a4
+1016	5142	7850677387516988	bin/STDISCM-SFML-CMAKE.exe	252b1a372cd83a22
+53	75	7850677646728202	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/out/build/x64-debug/CMakeFiles/cmake.verify_globs	395c08ef45ae0e4e
+100	937	7850677647183224	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/PokeballAnimation.cpp.obj	3303902fb5fe676
+102	1041	7850677647213408	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/TextureDisplay.cpp.obj	bb8ecbc7b04c40a4
+96	1049	7850677647153043	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/BaseRunner.cpp.obj	b59423fa706de4e
+1049	5352	7850677656668649	bin/STDISCM-SFML-CMAKE.exe	252b1a372cd83a22
+53	74	7850677874803432	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/out/build/x64-debug/CMakeFiles/cmake.verify_globs	395c08ef45ae0e4e
+103	984	7850677875310852	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/PokeballAnimation.cpp.obj	3303902fb5fe676
+106	1122	7850677875336495	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/TextureDisplay.cpp.obj	bb8ecbc7b04c40a4
+99	1126	7850677875271517	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/BaseRunner.cpp.obj	b59423fa706de4e
+1127	5344	7850677885548557	bin/STDISCM-SFML-CMAKE.exe	252b1a372cd83a22
+67	101	7850678195286464	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/out/build/x64-debug/CMakeFiles/cmake.verify_globs	395c08ef45ae0e4e

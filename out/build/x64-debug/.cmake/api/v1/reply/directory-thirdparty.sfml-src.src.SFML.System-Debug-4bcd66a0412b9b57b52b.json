@@ -1,0 +1,66 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"sfml_add_library"
+		],
+		"files" : 
+		[
+			"thirdparty/sfml-src/cmake/Macros.cmake",
+			"thirdparty/sfml-src/src/SFML/System/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 89,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 197,
+				"parent" : 1
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "devel",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"C:/Users/Josh Nu\u00f1ez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/lib/sfml-system-d.lib"
+			],
+			"targetId" : "sfml-system::@90e3de6ae8871c5b97fa",
+			"targetIndex" : 5,
+			"targetIsImportLibrary" : true,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "bin",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"bin/sfml-system-d-2.dll"
+			],
+			"targetId" : "sfml-system::@90e3de6ae8871c5b97fa",
+			"targetIndex" : 5,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "C:/Users/Josh Nu\u00f1ez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/System",
+		"source" : "thirdparty/sfml-src/src/SFML/System"
+	}
+}

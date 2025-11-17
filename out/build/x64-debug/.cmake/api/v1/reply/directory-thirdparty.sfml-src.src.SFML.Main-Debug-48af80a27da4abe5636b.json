@@ -1,0 +1,53 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"sfml_add_library"
+		],
+		"files" : 
+		[
+			"thirdparty/sfml-src/cmake/Macros.cmake",
+			"thirdparty/sfml-src/src/SFML/Main/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 17,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 197,
+				"parent" : 1
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "devel",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"C:/Users/Josh Nu\u00f1ez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/lib/sfml-main-d.lib"
+			],
+			"targetId" : "sfml-main::@ac90f600754de49a7134",
+			"targetIndex" : 3,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "C:/Users/Josh Nu\u00f1ez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Main",
+		"source" : "thirdparty/sfml-src/src/SFML/Main"
+	}
+}

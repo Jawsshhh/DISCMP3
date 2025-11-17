@@ -1,7 +1,5 @@
 .vs/
 *.vsidx
 *.user
-out/
-build/
 *.exe
 *.obj

@@ -1,0 +1,268 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "C:/Users/Josh Nu\u00f1ez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build",
+					"childIndexes" : 
+					[
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-thirdparty.sfml-src-Debug-8d07ac356eba7325481e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "thirdparty/sfml-src"
+				},
+				{
+					"build" : "C:/Users/Josh Nu\u00f1ez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML",
+					"childIndexes" : 
+					[
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-thirdparty.sfml-src.src.SFML-Debug-481d23ed8df9f495c9bb.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7.2"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "thirdparty/sfml-src/src/SFML"
+				},
+				{
+					"build" : "C:/Users/Josh Nu\u00f1ez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/System",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-thirdparty.sfml-src.src.SFML.System-Debug-4bcd66a0412b9b57b52b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7.2"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "thirdparty/sfml-src/src/SFML/System",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "C:/Users/Josh Nu\u00f1ez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Main",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-thirdparty.sfml-src.src.SFML.Main-Debug-48af80a27da4abe5636b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7.2"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "thirdparty/sfml-src/src/SFML/Main",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "C:/Users/Josh Nu\u00f1ez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Window",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-thirdparty.sfml-src.src.SFML.Window-Debug-09231a3562fbe6b30b5e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7.2"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "thirdparty/sfml-src/src/SFML/Window",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "C:/Users/Josh Nu\u00f1ez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Network",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-thirdparty.sfml-src.src.SFML.Network-Debug-e9d856ee7f139a0ef2d6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7.2"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "thirdparty/sfml-src/src/SFML/Network",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "C:/Users/Josh Nu\u00f1ez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Graphics",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-thirdparty.sfml-src.src.SFML.Graphics-Debug-ce61e5fb6e798c6236e7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7.2"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "thirdparty/sfml-src/src/SFML/Graphics",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "C:/Users/Josh Nu\u00f1ez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-build/src/SFML/Audio",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-thirdparty.sfml-src.src.SFML.Audio-Debug-3fa82a5b3477ac5af094.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7.2"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "thirdparty/sfml-src/src/SFML/Audio",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "STDISCM-SFML-CMAKE",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					],
+					"name" : "SFML",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "STDISCM-SFML-CMAKE::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-STDISCM-SFML-CMAKE-Debug-890273faa62044fdca1a.json",
+					"name" : "STDISCM-SFML-CMAKE",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "sfml-audio::@0a4c5b3ecf3d040ae19b",
+					"jsonFile" : "target-sfml-audio-Debug-803ea49946054a859c8e.json",
+					"name" : "sfml-audio",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "sfml-graphics::@b6e51267477818a0d9d1",
+					"jsonFile" : "target-sfml-graphics-Debug-3dd144f738d3716dfdb4.json",
+					"name" : "sfml-graphics",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "sfml-main::@ac90f600754de49a7134",
+					"jsonFile" : "target-sfml-main-Debug-55bd850b8b39988c2d25.json",
+					"name" : "sfml-main",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "sfml-network::@5eb5554e6113b9a39a53",
+					"jsonFile" : "target-sfml-network-Debug-b685618666063ab0eb63.json",
+					"name" : "sfml-network",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "sfml-system::@90e3de6ae8871c5b97fa",
+					"jsonFile" : "target-sfml-system-Debug-168ff7f545dd1dcd1999.json",
+					"name" : "sfml-system",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "sfml-window::@4cc2c13482e7cfeb1032",
+					"jsonFile" : "target-sfml-window-Debug-f617e4a0b1a7f4eed4d8.json",
+					"name" : "sfml-window",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Josh Nu\u00f1ez/Desktop/OPESY/SFMLCMake/out/build/x64-debug",
+		"source" : "C:/Users/Josh Nu\u00f1ez/Desktop/OPESY/SFMLCMake"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}
