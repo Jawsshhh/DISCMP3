@@ -25,7 +25,7 @@ void AnimatedCharacter::initialize()
 
 void AnimatedCharacter::loadAnimationFrames()
 {
-    /
+    
 
     sf::Texture* frame1 = TextureManager::getInstance()->getFromTextureMap("tile000", 0);
     if (frame1) animationFrames.push_back(frame1);

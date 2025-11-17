@@ -63,14 +63,33 @@ void TextureManager::loadSingleStreamAsset(int index)
 			auto filePath = entry.path();
 			std::cout << filePath.filename() << std::endl;
 
+			// Load as image first
+			sf::Image image;
+			if (!image.loadFromFile(filePath.string())) {
+				std::cout << "Failed to load image" << std::endl;
+				break;
+			}
+
+			// Create a new 256x256 image
+			sf::Image resizedImage;
+			resizedImage.create(256, 256);
+
+			// Copy and scale pixels
+			for (unsigned int y = 0; y < 256; y++) {
+				for (unsigned int x = 0; x < 256; x++) {
+					// Sample from original image (simple nearest-neighbor)
+					resizedImage.setPixel(x, y, image.getPixel(x * 2, y * 2));
+				}
+			}
+
+			// Create texture from resized image
 			sf::Texture* texture = new sf::Texture();
-			texture->loadFromFile(filePath.string());
+			texture->loadFromImage(resizedImage);
 
 			this->setStreamTextureAtIndex(index, texture);
-
 			this->textureMap[filePath.filename().string()].push_back(texture);
 
-			std::cout << "[TextureManager] Loaded streaming texture at index " << index << ": " << filePath.filename().string() << std::endl;
+			std::cout << "[TextureManager] Loaded and resized streaming texture at index " << index << std::endl;
 			break;
 		}
 

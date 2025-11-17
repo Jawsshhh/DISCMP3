@@ -14,6 +14,7 @@ void IconObject::initialize()
 	if (texture != nullptr && this->sprite != nullptr)
 	{
 		this->sprite->setTexture(*texture);
+
 		std::cout << "IconObject loaded texture index: " << this->textureIndex << std::endl;
 	}
 	else

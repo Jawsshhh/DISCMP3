@@ -29,7 +29,7 @@ private:
 	AnimatedCharacter* loadingCharacter = nullptr;
 	LoadingText* loadingText = nullptr;
 
-	const int TOTAL_TEXTURES = 300;
+	const int TOTAL_TEXTURES = 620;
 	const float STREAMING_LOAD_DELAY = 500.0f;
 	float ticks = 0.0f;
 
