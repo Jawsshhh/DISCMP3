@@ -66,7 +66,7 @@ void TextureDisplay::update(sf::Time deltaTime)
 		int numReadyToSpawn = loadedTextureCount - spawnedIconCount;
 
 		if (numReadyToSpawn > 0 && !bgTransitionStarted) {
-			const int SPAWN_BATCH_SIZE = 40;
+			const int SPAWN_BATCH_SIZE = 30;
 			int numToSpawnThisBatch = std::min(numReadyToSpawn, SPAWN_BATCH_SIZE);
 
 			std::cout << "[MainThread] === Spawning BATCH of " << numToSpawnThisBatch
@@ -83,7 +83,7 @@ void TextureDisplay::update(sf::Time deltaTime)
 
 		updateLoadingProgress();
 
-		const int LOAD_BATCH_SIZE = 40;
+		const int LOAD_BATCH_SIZE = 30;
 		int totalTextures = TOTAL_TEXTURES;
 
 		if (loadedTextureCount < totalTextures && !bgTransitionStarted)

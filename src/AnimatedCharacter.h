@@ -15,7 +15,7 @@ public:
 private:
     std::vector<sf::Texture*> animationFrames;
     int currentFrame = 0;
-    float animationSpeed = 0.1f; // Time between frames
+    float animationSpeed = 0.075f; // Time between frames
     float timeSinceLastFrame = 0.0f;
 
     float startX = 100.0f;
