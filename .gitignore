@@ -1,5 +1,14 @@
 .vs/
+out/
+build/
 *.vsidx
 *.user
 *.exe
 *.obj
+thirdparty/
+!thirdparty/.gitkeep
+out/
+build/
+cmake-build-*/
+CMakeCache.txt
+CMakeFiles/

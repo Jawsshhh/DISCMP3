@@ -55,6 +55,8 @@ void TextureManager::loadFromAssetList()
 
 void TextureManager::loadSingleStreamAsset(int index)
 {
+	std::this_thread::sleep_for(std::chrono::milliseconds(100)); // 100ms delay per asset
+
 	int fileNum = 0;
 
 	for (const auto& entry : std::filesystem::directory_iterator(STREAMING_PATH)) {
@@ -77,7 +79,6 @@ void TextureManager::loadSingleStreamAsset(int index)
 			// Copy and scale pixels
 			for (unsigned int y = 0; y < 256; y++) {
 				for (unsigned int x = 0; x < 256; x++) {
-					// Sample from original image (simple nearest-neighbor)
 					resizedImage.setPixel(x, y, image.getPixel(x * 2, y * 2));
 				}
 			}
