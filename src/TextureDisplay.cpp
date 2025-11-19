@@ -6,8 +6,7 @@
 #include "IconObject.h"
 #include "BGObject.h"
 
-// Reduce this value to make the white fade start sooner after pokeball
-constexpr float BG_TRANSITION_DURATION_OVERRIDE = 1.0f; // seconds (was longer)
+constexpr float BG_TRANSITION_DURATION_OVERRIDE = 1.0f; 
 
 TextureDisplay::TextureDisplay() : AGameObject("TextureDisplay")
 {
@@ -15,7 +14,6 @@ TextureDisplay::TextureDisplay() : AGameObject("TextureDisplay")
 
 TextureDisplay::~TextureDisplay()
 {
-	// Clean up icons
 	for (auto icon : iconList)
 	{
 		delete icon;
@@ -67,7 +65,6 @@ void TextureDisplay::update(sf::Time deltaTime)
 		int loadedTextureCount = TextureManager::getInstance()->getNumLoadedStreamTextures();
 		int numReadyToSpawn = loadedTextureCount - spawnedIconCount;
 
-		// Only spawn if we have LOADED textures ready AND fade hasn't started
 		if (numReadyToSpawn > 0 && !bgTransitionStarted) {
 			const int SPAWN_BATCH_SIZE = 40;
 			int numToSpawnThisBatch = std::min(numReadyToSpawn, SPAWN_BATCH_SIZE);
@@ -76,7 +73,6 @@ void TextureDisplay::update(sf::Time deltaTime)
 				<< " icons (out of " << numReadyToSpawn << " ready) ===" << std::endl;
 
 			for (int i = 0; i < numToSpawnThisBatch; i++) {
-				// Only spawn if the texture index exists
 				int textureIndex = this->iconList.size();
 				if (textureIndex < loadedTextureCount)
 				{
@@ -87,7 +83,6 @@ void TextureDisplay::update(sf::Time deltaTime)
 
 		updateLoadingProgress();
 
-		// Load textures in batches ONLY before background transition starts
 		const int LOAD_BATCH_SIZE = 40;
 		int totalTextures = TOTAL_TEXTURES;
 
@@ -107,15 +102,12 @@ void TextureDisplay::update(sf::Time deltaTime)
 		}
 	}
 
-	// NEW SEQUENCE: pokeball -> bg transition -> icon fade
 
-	// Step 1: Show pokeball after loading completes
 	if (loadingComplete && !pokeballAnimStarted)
 	{
 		startPokeballAnimation();
 	}
 
-	// Step 1b: Poll pokeball completion every frame
 	if (pokeballAnimStarted && !pokeballAnimComplete && pokeballAnim != nullptr)
 	{
 		if (pokeballAnim->isComplete())
@@ -125,24 +117,20 @@ void TextureDisplay::update(sf::Time deltaTime)
 			GameObjectManager::getInstance()->deleteObjectByName("PokeballAnim");
 			pokeballAnim = nullptr;
 
-			// Start background transition immediately (no extra-frame delay)
 			if (!bgTransitionStarted) {
 				startBackgroundTransition();
 			}
 		}
 	}
 
-	// Step 2: After pokeball completes, start background transition (fallback)
 	if (pokeballAnimComplete && !bgTransitionStarted)
 	{
 		startBackgroundTransition();
 	}
 
-	// Step 3: Track background transition completion
 	if (bgTransitionStarted && !bgTransitionComplete)
 	{
 		bgTransitionTimer += deltaTime.asSeconds();
-		// use the override so this happens faster when you lower BG_TRANSITION_DURATION_OVERRIDE
 		if (bgTransitionTimer >= BG_TRANSITION_DURATION_OVERRIDE)
 		{
 			bgTransitionComplete = true;
@@ -150,11 +138,23 @@ void TextureDisplay::update(sf::Time deltaTime)
 		}
 	}
 
-	// Step 4: Fade in icons after background transition
 	if (bgTransitionComplete && !allIconsVisible)
 	{
 		updateIconFadeIn(deltaTime);
 	}
+
+
+	if (allIconsVisible && !shouldStartScrolling)
+	{
+		shouldStartScrolling = true;
+		std::cout << "All icons visible, will start scrolling soon..." << std::endl;
+	}
+
+	if (shouldStartScrolling)
+	{
+		updateScrollAnimation(deltaTime);
+	}
+
 }
 
 void TextureDisplay::OnFinishedExecution()
@@ -171,7 +171,6 @@ void TextureDisplay::spawnObject()
 	IconObject* iconObj = new IconObject(objectName, this->iconList.size());
 	this->iconList.push_back(iconObj);
 
-	// Set position in grid with offset
 	int IMG_WIDTH = 68;
 	int IMG_HEIGHT = 68;
 	int OFFSET_X = -65;
@@ -204,8 +203,7 @@ void TextureDisplay::updateLoadingProgress()
 	float progress = static_cast<float>(loadedCount) / static_cast<float>(TOTAL_TEXTURES);
 	loadingCharacter->updateProgress(progress);
 
-	// Previously we marked loadingComplete as soon as all textures were loaded.
-	// Ensure all icons have actually been spawned/added before proceeding to pokeball/bg/fade.
+	
 	int spawnedCount = static_cast<int>(iconList.size());
 
 	// Only mark loading as complete when:
@@ -216,7 +214,6 @@ void TextureDisplay::updateLoadingProgress()
 		std::cout << "Loading complete! All textures loaded and all icons spawned. Ready for pokeball animation..." << std::endl;
 		loadingComplete = true;
 
-		// Remove loading character and text immediately
 		if (loadingCharacter != nullptr)
 		{
 			GameObjectManager::getInstance()->deleteObjectByName("LoadingCharacter");
@@ -233,7 +230,6 @@ void TextureDisplay::updateLoadingProgress()
 	}
 	else if (loadedCount >= TOTAL_TEXTURES && spawnedCount < TOTAL_TEXTURES)
 	{
-		// Helpful debug/logging if textures are ready but icons still being spawned.
 		std::cout << "All textures are loaded (" << loadedCount << "), waiting for spawned icons (" << spawnedCount << "/" << TOTAL_TEXTURES << ") before proceeding." << std::endl;
 	}
 }
@@ -247,7 +243,6 @@ void TextureDisplay::startPokeballAnimation()
 		pokeballAnimStarted = true;
 		std::cout << "Pokeball animation started!" << std::endl;
 	}
-	// Do not attempt to check completion here; completion is polled in update()
 }
 
 void TextureDisplay::startBackgroundTransition()
@@ -268,7 +263,6 @@ void TextureDisplay::startBackgroundTransition()
 
 void TextureDisplay::updateIconFadeIn(sf::Time deltaTime)
 {
-	// Small delay before starting icon fade
 	if (delayTimer < ICON_FADE_DELAY)
 	{
 		delayTimer += deltaTime.asSeconds();
@@ -285,10 +279,54 @@ void TextureDisplay::updateIconFadeIn(sf::Time deltaTime)
 		std::cout << "Icon fade-in complete!" << std::endl;
 	}
 
-	// Update all icon transparencies
+	//   icon transparencies
 	int alpha = static_cast<int>(iconFadeProgress * 255);
 	for (auto icon : iconList)
 	{
 		icon->setTransparency(alpha);
+	}
+}
+
+void TextureDisplay::updateScrollAnimation(sf::Time deltaTime)
+{
+	if (!isScrolling)
+	{
+		scrollTimer += deltaTime.asSeconds();
+
+		if (scrollTimer >= SCROLL_DELAY)
+		{
+			isScrolling = true;
+			scrollTimer = 0.0f;
+			std::cout << "Starting scroll animation..." << std::endl;
+		}
+		return;
+	}
+
+	// Animate scrolling
+	scrollTimer += deltaTime.asSeconds();
+	float progress = std::min(scrollTimer / SCROLL_DURATION, 1.0f);
+
+	// Smooth easing (ease-in-out)
+	float easedProgress = progress < 0.5f
+		? 2.0f * progress * progress
+		: 1.0f - std::pow(-2.0f * progress + 2.0f, 2.0f) / 2.0f;
+
+	currentScrollOffset = easedProgress * TOTAL_SCROLL_DISTANCE;
+
+	// Apply offset to all icons
+	for (size_t i = 0; i < iconList.size(); i++)
+	{
+		int col = i % MAX_COLUMN;
+		int row = i / MAX_COLUMN;
+
+		float baseX = -65 + (col * 68);
+		float baseY = -100 + (row * 68);
+
+		iconList[i]->setPosition(baseX, baseY - currentScrollOffset);
+	}
+
+	if (progress >= 1.0f)
+	{
+		std::cout << "Scroll animation complete! All 620 icons shown." << std::endl;
 	}
 }

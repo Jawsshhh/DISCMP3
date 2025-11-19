@@ -373,3 +373,19 @@
 48	70	7850929251726291	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/out/build/x64-debug/CMakeFiles/cmake.verify_globs	395c08ef45ae0e4e
 91	971	7850929252147538	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/TextureDisplay.cpp.obj	bb8ecbc7b04c40a4
 972	1871	7850929260956844	bin/STDISCM-SFML-CMAKE.exe	252b1a372cd83a22
+82	108	7850973426585154	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/out/build/x64-debug/CMakeFiles/cmake.verify_globs	395c08ef45ae0e4e
+135	1279	7850973427117175	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/TextureDisplay.cpp.obj	bb8ecbc7b04c40a4
+188	259	7852242914949554	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/out/build/x64-debug/CMakeFiles/cmake.verify_globs	395c08ef45ae0e4e
+281	1172	7852242915826240	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/BaseRunner.cpp.obj	b59423fa706de4e
+285	1175	7852242915868757	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/TextureDisplay.cpp.obj	bb8ecbc7b04c40a4
+1175	4712	7852242924775110	bin/STDISCM-SFML-CMAKE.exe	252b1a372cd83a22
+58	80	7852243583644053	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/out/build/x64-debug/CMakeFiles/cmake.verify_globs	395c08ef45ae0e4e
+104	957	7852243584096985	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/TextureDisplay.cpp.obj	bb8ecbc7b04c40a4
+958	1854	7852243592640008	bin/STDISCM-SFML-CMAKE.exe	252b1a372cd83a22
+59	77	7852244437528216	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/out/build/x64-debug/CMakeFiles/cmake.verify_globs	395c08ef45ae0e4e
+99	975	7852244437935060	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/BaseRunner.cpp.obj	b59423fa706de4e
+102	979	7852244437958747	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/TextureDisplay.cpp.obj	bb8ecbc7b04c40a4
+979	2126	7852244446725106	bin/STDISCM-SFML-CMAKE.exe	252b1a372cd83a22
+60	78	7852245746300604	C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/out/build/x64-debug/CMakeFiles/cmake.verify_globs	395c08ef45ae0e4e
+100	1434	7852245746708406	CMakeFiles/STDISCM-SFML-CMAKE.dir/src/TextureManager.cpp.obj	771cb7eded9474df
+1434	2372	7852245760051190	bin/STDISCM-SFML-CMAKE.exe	252b1a372cd83a22

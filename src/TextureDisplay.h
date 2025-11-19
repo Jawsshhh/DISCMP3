@@ -59,6 +59,17 @@ private:
 	const float ICON_FADE_DURATION = 1.5f;
 	float iconFadeProgress = 0.0f;
 
+	bool shouldStartScrolling = false;
+	bool isScrolling = false;
+	float scrollTimer = 0.0f;
+	float currentScrollOffset = 0.0f;
+
+	const float SCROLL_DELAY = 2.0f;        // Wait 2 seconds before scrolling
+	const float SCROLL_DURATION = 3.0f;     // Scroll animation takes 3 seconds
+	const float TOTAL_SCROLL_DISTANCE = 680.0f; // 4 rows × 68 pixels = 272 pixels
+
+	void updateScrollAnimation(sf::Time deltaTime);
+
 	void spawnObject();
 	void updateLoadingProgress();
 	void startPokeballAnimation();          // NEW
