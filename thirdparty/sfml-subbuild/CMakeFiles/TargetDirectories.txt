@@ -1,3 +1,0 @@
-C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-subbuild/CMakeFiles/sfml-populate.dir
-C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-subbuild/CMakeFiles/edit_cache.dir
-C:/Users/Josh Nuñez/Desktop/OPESY/SFMLCMake/thirdparty/sfml-subbuild/CMakeFiles/rebuild_cache.dir
